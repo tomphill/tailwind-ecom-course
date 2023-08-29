@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'DM Serif Text', serif;
+  }
+}
+
+.snipcart-button-primary {
+  @apply bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="/script.js"></script>
+    <script src="/snipcart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8f6c33c48d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="py-2 px-4 bg-black text-white sticky top-0 z-10 flex">
+      <div>
+        <h1 class="text-2xl"><span class="italic">Man</span>Bags</h1>
+        <p class="text-slate-400">Luxury bags for men.</p>
+      </div>
+      <div class="ml-auto my-auto">
+        <button class="snipcart-checkout flex items-center relative">
+          <span class="snipcart-total-price text-sm">£0.00</span>
+          <i class="fa-solid fa-cart-shopping text-3xl p-2"></i>
+          <span
+            class="snipcart-items-count absolute top-0 right-0 bg-blue-500 block w-5 h-5 text-xs rounded-full leading-5"
+            >0</span
+          >
+        </button>
+      </div>
+      <div class="pl-4 my-auto">
+        <button class="snipcart-customer-signin pl-4 border-l border-l-white">
+          <i class="fa-solid fa-user text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="flex bg-[url('/assets/bg.jpg')] bg-cover h-[calc(100vh-72px)] min-h-[400px]"
+      >
+        <div class="m-auto text-center">
+          <h1 class="text-3xl mb-8"><span class="italic">Man</span>Bags</h1>
+          <h1
+            class="mb-8 drop-shadow-lg text-7xl underline text-white decoration-black underline-offset-8"
+          >
+            Clean &amp; Modern.
+          </h1>
+          <p class="text-lg mb-8 drop-shadow-lg">Luxury bags for men.</p>
+          <button
+            id="btn-browse-collection"
+            class="bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+          >
+            Browse the collection
+          </button>
+        </div>
+      </header>
+      <!-- PRODUCT 1 -->
+      <section
+        id="product-1"
+        class="product md:flex max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="md:min-w-[30%] md:max-w-[30%]">
+          <img src="/assets/1.jpeg" alt="Alpine Elegance" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Alpine Elegance</h1>
+          <p class="mt-8">
+            Introducing the "Alpine Elegance" – where pristine beauty meets
+            unparalleled craftsmanship. Crafted from the finest white leather,
+            this luxury bag is inspired by the serene and untouched splendor of
+            mountain peaks. Its sleek design, combined with functional
+            compartments, makes it an ideal companion for the modern man on the
+            go. Silver-tone hardware and meticulous stitching showcase its
+            premium quality. Whether you're heading to a business meeting or a
+            weekend getaway, the Alpine Elegance ensures you carry your
+            essentials with style and sophistication. Elevate your accessory
+            game and make a statement with this timeless piece.
+          </p>
+          <p class="text-2xl mt-8">£79.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="alpine-elegance"
+              data-item-price="79.99"
+              data-item-description="Crafted from the finest white leather,
+              this luxury bag is inspired by the serene and untouched splendor of
+              mountain peaks."
+              data-item-image="/assets/1.jpeg"
+              data-item-name="Alpine Elegance"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT 2 -->
+      <section
+        class="product md:flex flex-row-reverse max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="md:min-w-[30%] md:max-w-[30%]">
+          <img src="/assets/2.jpeg" alt="Bianco Prestige" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Bianco Prestige</h1>
+          <p class="mt-8">
+            Experience the epitome of European luxury with the "Bianco
+            Prestige." Crafted from the most exquisite white leather, this bag
+            embodies the elegance and sophistication of Italian design. Every
+            detail, from its polished silver accents to its refined stitching,
+            speaks of a legacy of craftsmanship. Its spacious interiors, paired
+            with sleek external lines, make it not just a fashion statement but
+            also a testament to functionality. Whether you're navigating the
+            cobblestone streets of Rome or the modern avenues of Milan, the
+            Bianco Prestige is your perfect companion, exuding class and
+            distinction at every turn. Embrace the allure of true luxury.
+          </p>
+          <p class="text-2xl mt-8">£49.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="bianco-prestige"
+              data-item-price="49.99"
+              data-item-description="Crafted from the most exquisite white leather, this bag
+              embodies the elegance and sophistication of Italian design."
+              data-item-image="/assets/2.jpeg"
+              data-item-name="Bianco Prestige"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT 3 -->
+      <section
+        class="product md:flex max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="md:min-w-[30%] md:max-w-[30%]">
+          <img src="/assets/3.jpeg" alt="Ivory Icon" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Ivory Icon</h1>
+          <p class="mt-8">
+            Step into a world of unmatched sophistication with the "Ivory Icon."
+            This luxury leather bag, bathed in a radiant white hue, stands as a
+            symbol of timeless elegance and modern design. Crafted with
+            meticulous attention to detail, its supple leather texture and
+            gleaming gold accents set it apart in a league of its own. Beyond
+            its beauty, the Ivory Icon offers a harmonious blend of style and
+            utility, with compartments tailored for the needs of the
+            contemporary gentleman. Whether attending a gala or a boardroom
+            meeting, make a statement of refined taste and distinction with the
+            Ivory Icon. A true icon never fades; it only becomes more legendary.
+          </p>
+          <p class="text-2xl mt-8">£39.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="ivory-icon"
+              data-item-price="39.99"
+              data-item-description="Crafted with
+              meticulous attention to detail, its supple leather texture and
+              gleaming gold accents set it apart in a league of its own."
+              data-item-image="/assets/3.jpeg"
+              data-item-name="Ivory Icon"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="text-white text-3xl p-20 bg-gradient-to-r from-slate-800 to-zinc-800"
+    >
+      <div class="flex justify-center gap-8">
+        <a href="https://facebook.com">
+          <i
+            class="fa-brands fa-facebook hover:text-blue-500 transition-colors"
+          ></i>
+        </a>
+        <a href="https://youtube.com">
+          <i
+            class="fa-brands fa-youtube hover:text-red-500 transition-colors"
+          ></i>
+        </a>
+        <a href="https://instagram.com">
+          <i
+            class="fa-brands fa-instagram hover:text-pink-500 transition-colors"
+          ></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
